@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
@@ -16,36 +17,114 @@
                         sans: ['Inter', 'sans-serif'],
                         serif: ['Playfair Display', 'serif'],
                     },
-                    borderWidth: {
-                        '6': '6px',
-                    },
                     colors: {
-                        black: '#0a0a0a',
+                        'warm-brown': '#7d7973',
+                        'sage-green': '#6b8e7a',
                     }
                 }
             }
         }
     </script>
     <link rel="stylesheet" href="../assets/css/main.css">
-</head>
-<body class="antialiased selection:bg-black selection:text-white">
 
-    <header class="w-full px-6 md:px-12 pt-10 pb-6 border-b-6 border-black sticky top-0 bg-white z-50">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
+    <style>
+        html, body {
+            background-image: url('../assets/images/Degradado marfil dorado con grano sutil.png');
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: transparent !important;
+            border-bottom: 2px solid #7d7973;
+        }
+
+        .nav-link {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            text-transform: lowercase;
+            letter-spacing: 0;
+            font-size: 1rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem !important;
+            line-height: 1.2;
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3rem !important;
+            }
+        }
+
+        p, li {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            color: #7d7973;
+            line-height: 1.6;
+            background-color: transparent !important;
+            text-shadow: none !important;
+        }
+
+        * {
+            background-clip: border-box;
+            box-shadow: none !important;
+        }
+
+        footer {
+            background-color: #7d7973 !important;
+            border-top: 2px solid #7d7973;
+        }
+
+        footer, footer * {
+            color: white !important;
+            background-color: transparent !important;
+        }
+
+        footer a {
+            color: white !important;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        button, .cta-button {
+            background-color: transparent;
+            box-shadow: none !important;
+            border-width: 2px;
+            text-shadow: none !important;
+        }
+
+        main, section {
+            background-color: transparent !important;
+        }
+    </style>
+</head>
+<body class="antialiased" style="color: #7d7973;">
+
+    <header class="w-full px-6 md:px-12 pt-6 pb-4 sticky top-0 z-50">
+        <div class="mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0" style="max-width: 1024px;">
             <div>
-                <a href="../index.html" class="text-xl md:text-2xl font-serif tracking-wide font-semibold text-center md:text-left hover:opacity-70 transition-opacity">
-                    César Castillo, PhD
+                <a href="../index.html" class="text-xl md:text-2xl font-serif tracking-wide font-semibold text-center md:text-left hover:opacity-70 transition-opacity" style="color: #7d7973;">
+                    César Castillo
                 </a>
             </div>
             <nav>
-                <ul class="flex flex-wrap justify-center items-center gap-4 md:gap-6 text-sm md:text-base font-sans tracking-widest uppercase">
-                    <li><a href="sobre-mi.html" class="nav-link">Sobre mí</a></li>
-                    <li class="select-none text-gray-300">|</li>
-                    <li><a href="servicios.html" class="nav-link font-semibold text-black border-b-2 border-black">Servicios</a></li>
-                    <li class="select-none text-gray-300">|</li>
-                    <li><a href="experiencia.html" class="nav-link">Experiencia</a></li>
-                    <li class="select-none text-gray-300">|</li>
-                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <ul class="flex flex-wrap justify-center items-center gap-4 md:gap-6 text-sm md:text-base tracking-wide">
+                    <li><a href="sobre-mi.html" class="nav-link" style="color: #7d7973;">sobre mí</a></li>
+                    <li class="select-none" style="color: #d4d0c8;">|</li>
+                    <li><a href="servicios.html" class="nav-link" style="color: #6b8e7a; font-weight: bold;">servicios</a></li>
+                    <li class="select-none" style="color: #d4d0c8;">|</li>
+                    <li><a href="contacto.html" class="nav-link" style="color: #7d7973;">contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -55,33 +134,29 @@
         
         <article class="space-y-12">
             
-            <!-- Page Title -->
             <section id="titulo">
-                <h1 class="font-serif text-4xl md:text-5xl font-medium mb-4 leading-tight">
+                <h1 class="font-serif font-medium mb-4 leading-tight" style="color: #7d7973;">
                     Servicios
                 </h1>
-                <div class="h-1 w-16 bg-black"></div>
+                <div class="h-1 w-16" style="background-color: #6b8e7a;"></div>
             </section>
 
-            <!-- Intro -->
-            <section id="intro" class="font-sans font-light text-gray-700 leading-relaxed">
+            <section id="intro" class="font-sans font-light leading-relaxed">
                 <p>
                     Ofrezco servicios integrados de atención clínica, supervisión profesional, consultoría teórica y análisis crítico de producciones audiovisuales. Mi trabajo se fundamenta en una perspectiva psicoanalítica rigurosa y en reflexión teórica constante.
                 </p>
             </section>
 
-            <!-- Services Grid -->
             <section id="servicios" class="space-y-8">
                 
-                <!-- Service 1 -->
-                <div class="border-l-4 border-black pl-8 py-4">
-                    <h2 class="font-serif text-2xl font-semibold mb-2">Psicoterapia Individual</h2>
-                    <p class="font-sans text-sm text-gray-600 mb-4 uppercase tracking-wide">60 minutos | Presencial u Online</p>
-                    <p class="font-sans font-light text-gray-700 leading-relaxed mb-3">
+                <div class="border-l-4 pl-8 py-4" style="border-color: #7d7973;">
+                    <h2 class="font-serif text-2xl font-semibold mb-2" style="color: #7d7973;">Psicoterapia Individual</h2>
+                    <p class="font-sans text-sm mb-4 uppercase tracking-wide" style="color: #9a8f87;">60 minutos | Presencial u Online</p>
+                    <p class="font-sans font-light leading-relaxed mb-3">
                         Acompañamiento terapéutico desde una perspectiva psicoanalítica para adultos que buscan explorar y transformar aspectos profundos de su vida emocional, relacional e identitaria.
                     </p>
-                    <div class="bg-gray-50 p-4 text-sm font-sans font-light text-gray-700 space-y-2">
-                        <p><strong>Áreas de trabajo:</strong></p>
+                    <div class="p-4 text-sm font-sans font-light space-y-2" style="border: 1px solid #d4d0c8;">
+                        <p><strong style="color: #6b8e7a;">Áreas de trabajo:</strong></p>
                         <ul class="ml-4">
                             <li>• Depresión, ansiedad y crisis emocionales</li>
                             <li>• Trauma y experiencias disociativas</li>
@@ -92,15 +167,14 @@
                     </div>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="border-l-4 border-black pl-8 py-4">
-                    <h2 class="font-serif text-2xl font-semibold mb-2">Supervisión Clínica</h2>
-                    <p class="font-sans text-sm text-gray-600 mb-4 uppercase tracking-wide">60 minutos | Presencial u Online</p>
-                    <p class="font-sans font-light text-gray-700 leading-relaxed mb-3">
+                <div class="border-l-4 pl-8 py-4" style="border-color: #7d7973;">
+                    <h2 class="font-serif text-2xl font-semibold mb-2" style="color: #7d7973;">Supervisión Clínica</h2>
+                    <p class="font-sans text-sm mb-4 uppercase tracking-wide" style="color: #9a8f87;">60 minutos | Presencial u Online</p>
+                    <p class="font-sans font-light leading-relaxed mb-3">
                         Supervisión de casos clínicos para psicólogos y terapeutas en formación o ejercicio. Enfoque en reflexión teórica, desarrollo de competencias clínicas y exploración contratransferencial.
                     </p>
-                    <div class="bg-gray-50 p-4 text-sm font-sans font-light text-gray-700 space-y-2">
-                        <p><strong>Dirigido a:</strong></p>
+                    <div class="p-4 text-sm font-sans font-light space-y-2" style="border: 1px solid #d4d0c8;">
+                        <p><strong style="color: #6b8e7a;">Dirigido a:</strong></p>
                         <ul class="ml-4">
                             <li>• Terapeutas en formación psicoanalítica</li>
                             <li>• Profesionales psicológicos en ejercicio privado</li>
@@ -109,15 +183,14 @@
                     </div>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="border-l-4 border-black pl-8 py-4">
-                    <h2 class="font-serif text-2xl font-semibold mb-2">Consultoría Teórica</h2>
-                    <p class="font-sans text-sm text-gray-600 mb-4 uppercase tracking-wide">60 minutos | Online o Presencial</p>
-                    <p class="font-sans font-light text-gray-700 leading-relaxed mb-3">
+                <div class="border-l-4 pl-8 py-4" style="border-color: #7d7973;">
+                    <h2 class="font-serif text-2xl font-semibold mb-2" style="color: #7d7973;">Consultoría Teórica</h2>
+                    <p class="font-sans text-sm mb-4 uppercase tracking-wide" style="color: #9a8f87;">60 minutos | Online o Presencial</p>
+                    <p class="font-sans font-light leading-relaxed mb-3">
                         Asesoramiento especializado en temas de teoría psicoanalítica, filosofía de la cultura, estética y crítica audiovisual. Ideal para investigadores, académicos y profesionales en artes y humanidades.
                     </p>
-                    <div class="bg-gray-50 p-4 text-sm font-sans font-light text-gray-700 space-y-2">
-                        <p><strong>Áreas de consultoría:</strong></p>
+                    <div class="p-4 text-sm font-sans font-light space-y-2" style="border: 1px solid #d4d0c8;">
+                        <p><strong style="color: #6b8e7a;">Áreas de consultoría:</strong></p>
                         <ul class="ml-4">
                             <li>• Marcos teóricos psicoanalíticos para investigación</li>
                             <li>• Filosofía de la subjetividad y la representación</li>
@@ -127,15 +200,14 @@
                     </div>
                 </div>
 
-                <!-- Service 4 -->
-                <div class="border-l-4 border-black pl-8 py-4">
-                    <h2 class="font-serif text-2xl font-semibold mb-2">Análisis Crítico Audiovisual</h2>
-                    <p class="font-sans text-sm text-gray-600 mb-4 uppercase tracking-wide">Proyecto-dependent | Presencial, Online, o Híbrido</p>
-                    <p class="font-sans font-light text-gray-700 leading-relaxed mb-3">
+                <div class="border-l-4 pl-8 py-4" style="border-color: #7d7973;">
+                    <h2 class="font-serif text-2xl font-semibold mb-2" style="color: #7d7973;">Análisis Crítico Audiovisual</h2>
+                    <p class="font-sans text-sm mb-4 uppercase tracking-wide" style="color: #9a8f87;">Proyecto-dependiente | Presencial, Online, o Híbrido</p>
+                    <p class="font-sans font-light leading-relaxed mb-3">
                         Análisis crítico de películas, series y contenido audiovisual desde perspectivas psicoanalíticas, filosóficas y estéticas. Aplicable a desarrollo creativo, educación, crítica o investigación.
                     </p>
-                    <div class="bg-gray-50 p-4 text-sm font-sans font-light text-gray-700 space-y-2">
-                        <p><strong>Usos posibles:</strong></p>
+                    <div class="p-4 text-sm font-sans font-light space-y-2" style="border: 1px solid #d4d0c8;">
+                        <p><strong style="color: #6b8e7a;">Usos posibles:</strong></p>
                         <ul class="ml-4">
                             <li>• Consultoría para productoras y estudios</li>
                             <li>• Docencia en cátedras de cine y media studies</li>
@@ -147,35 +219,33 @@
 
             </section>
 
-            <!-- Pricing Section -->
-            <section id="aranceles" class="space-y-6 pt-8 border-t border-gray-200">
-                <h2 class="font-sans text-lg tracking-[0.2em] uppercase font-semibold text-black">
+            <section id="aranceles" class="space-y-6 pt-8" style="border-top: 1px solid #d4d0c8;">
+                <h2 class="font-sans text-lg tracking-[0.2em] uppercase font-semibold" style="color: #7d7973;">
                     Aranceles
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="border border-gray-200 p-6 text-center hover:border-black transition-colors">
-                        <p class="font-serif text-2xl font-semibold mb-1">$80.000</p>
-                        <p class="font-sans text-sm text-gray-600 uppercase tracking-wide mb-3">Sesión Individual / Supervisión</p>
-                        <p class="font-sans text-xs text-gray-500">60 minutos</p>
+                    <div class="p-6 text-center transition-colors" style="border: 1px solid #d4d0c8;" onmouseover="this.style.borderColor='#6b8e7a';" onmouseout="this.style.borderColor='#d4d0c8';">
+                        <p class="font-serif text-2xl font-semibold mb-1" style="color: #7d7973;">$80.000</p>
+                        <p class="font-sans text-sm uppercase tracking-wide mb-3" style="color: #9a8f87;">Sesión Individual / Supervisión</p>
+                        <p class="font-sans text-xs" style="color: #9a8f87;">60 minutos</p>
                     </div>
-                    <div class="border border-gray-200 p-6 text-center hover:border-black transition-colors">
-                        <p class="font-serif text-2xl font-semibold mb-1">$90.000</p>
-                        <p class="font-sans text-sm text-gray-600 uppercase tracking-wide mb-3">Consultoría Teórica</p>
-                        <p class="font-sans text-xs text-gray-500">60 minutos</p>
+                    <div class="p-6 text-center transition-colors" style="border: 1px solid #d4d0c8;" onmouseover="this.style.borderColor='#6b8e7a';" onmouseout="this.style.borderColor='#d4d0c8';">
+                        <p class="font-serif text-2xl font-semibold mb-1" style="color: #7d7973;">$90.000</p>
+                        <p class="font-sans text-sm uppercase tracking-wide mb-3" style="color: #9a8f87;">Consultoría Teórica</p>
+                        <p class="font-sans text-xs" style="color: #9a8f87;">60 minutos</p>
                     </div>
                 </div>
-                <p class="font-sans text-xs text-gray-500 mt-4">
+                <p class="font-sans text-xs mt-4" style="color: #9a8f87;">
                     * Los aranceles por análisis audiovisual se ajustan según alcance y complejidad del proyecto. Consultar.
                 </p>
             </section>
 
-            <!-- CTA -->
-            <section id="contacto-cta" class="pt-8 border-t border-gray-200">
-                <p class="font-sans font-light text-gray-700 mb-6">
+            <section id="contacto-cta" class="pt-8" style="border-top: 1px solid #d4d0c8;">
+                <p class="font-sans font-light mb-6">
                     ¿Interesado en alguno de estos servicios?
                 </p>
-                <a href="contacto.html" class="inline-block border-2 border-black text-black px-8 py-3 font-sans text-sm tracking-[0.2em] uppercase hover:bg-black hover:text-white transition-all duration-300">
-                    Contactactame
+                <a href="contacto.html" class="inline-block px-8 py-3 font-sans text-sm tracking-[0.2em] uppercase transition-all duration-300" style="border: 2px solid #7d7973; background-color: transparent; color: #7d7973;" onmouseover="this.style.backgroundColor='#7d7973'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#7d7973';">
+                    Contáctame
                 </a>
             </section>
 
@@ -183,22 +253,17 @@
 
     </main>
 
-    <footer class="w-full px-6 md:px-12 py-8 mt-auto border-t-6 border-black bg-white">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-0">
+    <footer class="w-full px-6 md:px-12 py-8 mt-auto">
+        <div class="mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-0" style="max-width: 1024px;">
             <div class="flex flex-col">
                 <span class="font-serif text-lg md:text-xl font-semibold">César Castillo Vega</span>
-                <span class="font-sans text-sm text-gray-500 tracking-wider">Psicólogo, Mg, PhD.</span>
+                <span class="font-sans text-sm tracking-wider">Psicólogo Clínico, Mg, PhD</span>
+                <span class="font-sans text-xs tracking-wider mt-1">Santiago, Chile</span>
             </div>
             <div class="flex flex-col items-start md:items-end gap-1 font-sans font-light text-sm md:text-base">
-                <a href="mailto:cecastillo@uchile.cl" class="hover:text-gray-500 transition-colors">
-                    cecastillo@uchile.cl
-                </a>
-                <a href="mailto:hxcmsk@gmail.com" class="hover:text-gray-500 transition-colors text-gray-500">
-                    hxcmsk@gmail.com
-                </a>
-                <a href="tel:+56965157548" class="hover:text-gray-500 transition-colors mt-1">
-                    +56 9 6515 7548
-                </a>
+                <a href="mailto:cecastillo@uchile.cl">cecastillo@uchile.cl</a>
+                <a href="mailto:hxcmsk@gmail.com" class="text-sm opacity-80">hxcmsk@gmail.com</a>
+                <a href="tel:+56965157548" class="mt-1">+56 9 6515 7548</a>
             </div>
         </div>
     </footer>
