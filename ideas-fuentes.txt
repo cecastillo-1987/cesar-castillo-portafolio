@@ -1,0 +1,17 @@
+Lusitana
+Spectral
+Gulzar
+Instrument Serif
+Playfair Display
+
+Solo para header:
+Padyakke expanded one
+
+
+
+colores: 
+#f7f4ef
+#7d7973
+#4a6984
+#6b8e7a
+#d9a036

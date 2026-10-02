@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | César Castillo, PhD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    borderWidth: {
+                        '6': '6px',
+                    },
+                    colors: {
+                        black: '#0a0a0a',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body class="antialiased selection:bg-black selection:text-white">
+
+    <header class="w-full px-6 md:px-12 pt-10 pb-6 border-b-6 border-black sticky top-0 bg-white z-50">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
+            <div>
+                <a href="../index.html" class="text-xl md:text-2xl font-serif tracking-wide font-semibold text-center md:text-left hover:opacity-70 transition-opacity">
+                    César Castillo, PhD
+                </a>
+            </div>
+            <nav>
+                <ul class="flex flex-wrap justify-center items-center gap-4 md:gap-6 text-sm md:text-base font-sans tracking-widest uppercase">
+                    <li><a href="sobre-mi.html" class="nav-link">Sobre mí</a></li>
+                    <li class="select-none text-gray-300">|</li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li class="select-none text-gray-300">|</li>
+                    <li><a href="experiencia.html" class="nav-link">Experiencia</a></li>
+                    <li class="select-none text-gray-300">|</li>
+                    <li><a href="contacto.html" class="nav-link font-semibold text-black border-b-2 border-black">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow w-full max-w-4xl mx-auto px-6 md:px-12 py-16 md:py-24">
+        
+        <article class="space-y-12">
+            
+            <!-- Page Title -->
+            <section id="titulo">
+                <h1 class="font-serif text-4xl md:text-5xl font-medium mb-4 leading-tight">
+                    Trabajemos juntos
+                </h1>
+                <div class="h-1 w-16 bg-black"></div>
+            </section>
+
+            <!-- Intro -->
+            <section id="intro" class="font-sans font-light text-gray-700 leading-relaxed">
+                <p>
+                    Si estás interesado en iniciar un proceso psicoterapeutico o tienes dudas al respecto, no dudes en contactarme por cualquiera de los canales disponibles. Actualmente estoy recibiendo nuevos clientes y tengo disponibilidad para cupos con arancel diferenciado.
+                </p>
+            </section>
+
+            <!-- Contact Methods -->
+            <section id="metodos-contacto" class="space-y-8">
+                
+                <!-- Email 1 -->
+                <div class="border-l-4 border-black pl-8 py-4">
+                    <h2 class="font-serif text-xl font-semibold mb-2">Correo electronico</h2>
+                    <a href="mailto:cecastillo@uchile.cl" class="font-sans font-light text-gray-700 hover:text-black transition-colors text-lg">
+                        cecastillo@uchile.cl
+                    </a>
+                    <p class="font-sans text-xs text-gray-500 mt-2">
+                </div>
+
+                <!-- Phone -->
+                <div class="border-l-4 border-black pl-8 py-4">
+                    <h2 class="font-serif text-xl font-semibold mb-2">Teléfono</h2>
+                    <a href="tel:+56965157548" class="font-sans font-light text-gray-700 hover:text-black transition-colors text-lg">
+                        +56 9 6515 7548
+                    </a>
+                    <p class="font-sans text-xs text-gray-500 mt-2">Llamadas y WhatsApp</p>
+                </div>
+
+                <!-- Location -->
+                <div class="border-l-4 border-black pl-8 py-4">
+                    <h2 class="font-serif text-xl font-semibold mb-2">Ubicación</h2>
+                    <p class="font-sans font-light text-gray-700">Monjitas #527, Metro Bellas Artes, Santiago Centro</p>
+                    <p class="font-sans text-xs text-gray-500 mt-2">Atención presencial u online disponible</p>
+                </div>
+
+            </section>
+
+            <!-- Contact Form Section -->
+            <section id="formulario" class="space-y-6 pt-8 border-t border-gray-200">
+                <h2 class="font-sans text-lg tracking-[0.2em] uppercase font-semibold text-black">
+                    Envía un Mensaje
+                </h2>
+                <p class="font-sans font-light text-gray-700 text-sm">
+                    Completa el formulario y me pondré en contacto en el menor tiempo posible.
+                </p>
+                
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+                    
+                    <!-- Name Field -->
+                    <div>
+                        <label for="nombre" class="block font-sans text-sm font-semibold text-black mb-2">
+                            Nombre
+                        </label>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre" 
+                            required
+                            class="w-full border border-gray-300 px-4 py-3 font-sans text-sm focus:border-black focus:outline-none transition-colors"
+                            placeholder="Tu nombre completo"
+                        >
+                    </div>
+
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email" class="block font-sans text-sm font-semibold text-black mb-2">
+                            Email
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required
+                            class="w-full border border-gray-300 px-4 py-3 font-sans text-sm focus:border-black focus:outline-none transition-colors"
+                            placeholder="tu@email.com"
+                        >
+                    </div>
+
+                    <!-- Phone Field (Optional) -->
+                    <div>
+                        <label for="telefono" class="block font-sans text-sm font-semibold text-black mb-2">
+                            Teléfono (opcional)
+                        </label>
+                        <input 
+                            type="tel" 
+                            id="telefono" 
+                            name="telefono"
+                            class="w-full border border-gray-300 px-4 py-3 font-sans text-sm focus:border-black focus:outline-none transition-colors"
+                            placeholder="+56 9 XXXX XXXX"
+                        >
+                    </div>
+
+                    <!-- Subject Field -->
+                    <div>
+                        <label for="asunto" class="block font-sans text-sm font-semibold text-black mb-2">
+                            Asunto
+                        </label>
+                        <select 
+                            id="asunto" 
+                            name="asunto" 
+                            required
+                            class="w-full border border-gray-300 px-4 py-3 font-sans text-sm focus:border-black focus:outline-none transition-colors"
+                        >
+                            <option value="">Selecciona un asunto</option>
+                            <option value="Atención clínica">Atención clínica</option>
+                            <option value="Supervisión clínica">Supervisión clínica</option>
+                            <option value="Consultoría teórica">Consultoría teórica</option>
+                            <option value="Análisis audiovisual">Análisis audiovisual</option>
+                            <option value="Colaboración académica">Colaboración académica</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <!-- Message Field -->
+                    <div>
+                        <label for="mensaje" class="block font-sans text-sm font-semibold text-black mb-2">
+                            Mensaje
+                        </label>
+                        <textarea 
+                            id="mensaje" 
+                            name="mensaje" 
+                            rows="6" 
+                            required
+                            class="w-full border border-gray-300 px-4 py-3 font-sans text-sm focus:border-black focus:outline-none transition-colors resize-none"
+                            placeholder="Cuéntame más sobre lo que te interesa..."
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button 
+                            type="submit" 
+                            class="w-full md:w-auto border-2 border-black text-black px-8 py-3 font-sans text-sm tracking-[0.2em] uppercase hover:bg-black hover:text-white transition-all duration-300 cursor-pointer"
+                        >
+                            Enviar Mensaje
+                        </button>
+                    </div>
+
+                    <!-- Form Note -->
+                    <p class="font-sans text-xs text-gray-500">
+                        * Este formulario está protegido. Tus datos no serán compartidos.
+                    </p>
+
+                </form>
+            </section>
+
+            <!-- Response Time -->
+            <section id="respuesta" class="pt-8 border-t border-gray-200">
+                <div class="bg-gray-50 p-6">
+                    <h3 class="font-serif font-semibold mb-2">Tiempo de Respuesta</h3>
+                    <p class="font-sans font-light text-gray-700 text-sm">
+                        Generalmente respondo en 24-48 horas. Para consultas urgentes, por favor llama o envía un WhatsApp.
+                    </p>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer class="w-full px-6 md:px-12 py-8 mt-auto border-t-6 border-black bg-white">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-0">
+            <div class="flex flex-col">
+                <span class="font-serif text-lg md:text-xl font-semibold">César Castillo Vega</span>
+                <span class="font-sans text-sm text-gray-500 tracking-wider">Psicólogo, Mg, PhD.</span>
+            </div>
+            <div class="flex flex-col items-start md:items-end gap-1 font-sans font-light text-sm md:text-base">
+                <a href="mailto:cecastillo@uchile.cl" class="hover:text-gray-500 transition-colors">
+                    cecastillo@uchile.cl
+                </a>
+                <a href="tel:+56965157548" class="hover:text-gray-500 transition-colors mt-1">
+                    +56 9 6515 7548
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

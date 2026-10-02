@@ -1,0 +1,32 @@
+# robots.txt - Instrucciones para bots de búsqueda
+# Referencia: https://www.robotstxt.org/
+
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /*.js
+Disallow: /*.css
+Disallow: /assets/
+
+# Sitemap (ubicación)
+Sitemap: https://cesar-castillo.github.io/cesar-castillo-portafolio/sitemap.xml
+
+# Crawl delay (tiempo entre requests a tu sitio)
+Crawl-delay: 1
+
+# Reglas específicas para Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Reglas específicas para Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Bloquear bots maliciosos
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

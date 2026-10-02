@@ -1,0 +1,330 @@
+/* 
+    main-v2.css - Estilos mejorados para portafolio de César Castillo
+    ===================================================================
+    CAMBIOS:
+    - Fondo texturizado (marfil-dorado con grano)
+    - Tipografía invertida: Garamond (headers) + Inter (body)
+    - Paleta desaturada: #7d7973 (marrón cálido) + #6b8e7a (verde-gris)
+    - SEO minimalista (solo psicoterapia individual adultos/adolescentes)
+*/
+
+/* RESET & BASE */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('assets\images\Degradado marfil dorado con grano sutil.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #7d7973;  /* Marrón cálido en lugar de negro puro */
+    font-family: 'Inter', sans-serif;
+}
+
+/* RESET COLOR VARIABLES */
+:root {
+    --color-primary: #7d7973;      /* Marrón cálido para texto principal */
+    --color-secondary: #6b8e7a;    /* Verde-gris para acentos */
+    --color-light: #a9a39a;        /* Versión más clara del marrón */
+    --color-border: #7d7973;       /* Bordes en marrón */
+    --color-text-light: #9a8f87;   /* Texto gris-marrón claro */
+}
+
+/* TYPOGRAPHY */
+/* Headers: Garamond (serif) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: #7d7973;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 1.8rem;
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+/* Body: Inter (sans-serif) */
+body, p, li, span {
+    font-family: 'Inter', sans-serif;
+    color: #7d7973;
+    line-height: 1.6;
+}
+
+/* NAVIGATION LINKS */
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #7d7973;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #6b8e7a;  /* Verde-gris underline */
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #6b8e7a;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* HEADER */
+header {
+    border-bottom-color: #7d7973;
+    background-color: rgba(255, 255, 255, 0.95);  /* Semi-transparent white para ver textura */
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    color: #7d7973;
+}
+
+/* BORDERS & SEPARATORS */
+.border-b-6, .border-t-6 {
+    border-color: #7d7973;
+}
+
+.border-l-4 {
+    border-color: #7d7973;
+}
+
+/* BUTTONS */
+button, [type="submit"], .cta-button {
+    border-color: #7d7973;
+    color: #7d7973;
+    transition: all 0.3s ease;
+}
+
+button:hover, [type="submit"]:hover, .cta-button:hover {
+    background-color: #7d7973;
+    color: #f5f5f0;  /* Texto claro sobre fondo marrón */
+}
+
+/* INPUT FIELDS */
+input, textarea, select {
+    border-color: #d4d0c8;  /* Borde gris claro */
+    color: #7d7973;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #7d7973;
+    box-shadow: 0 0 0 3px rgba(125, 121, 115, 0.1);
+}
+
+/* LINKS */
+a {
+    color: #6b8e7a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #7d7973;
+}
+
+/* ANIMATIONS */
+
+/* Fade in on page load */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main > article > * {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+main > article > *:nth-child(1) { animation-delay: 0.1s; }
+main > article > *:nth-child(2) { animation-delay: 0.2s; }
+main > article > *:nth-child(3) { animation-delay: 0.3s; }
+main > article > *:nth-child(4) { animation-delay: 0.4s; }
+main > article > *:nth-child(5) { animation-delay: 0.5s; }
+
+/* HOVER EFFECTS */
+
+.border-l-4 {
+    transition: padding-left 0.3s ease, border-color 0.3s ease;
+}
+
+.border-l-4:hover {
+    padding-left: 2rem;
+    border-color: #6b8e7a;  /* Verde-gris al hover */
+}
+
+/* CARDS & BOXES */
+.service-card, .price-card, .publication-item {
+    border-color: #d4d0c8;
+    background-color: rgba(255, 255, 255, 0.7);  /* Transparencia para ver textura */
+    transition: border-color 0.3s ease;
+}
+
+.service-card:hover, .price-card:hover {
+    border-color: #7d7973;
+}
+
+/* TEXT HIGHLIGHTS */
+strong {
+    color: #6b8e7a;  /* Verde-gris para énfasis */
+    font-weight: 600;
+}
+
+/* ACCESSIBILITY */
+
+*:focus-visible {
+    outline: 2px solid #7d7973;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .border-l-4 {
+        padding-left: 1rem;
+    }
+
+    .border-l-4:hover {
+        padding-left: 1.5rem;
+    }
+}
+
+/* PRINT STYLES */
+@media print {
+    body {
+        background-image: none;
+        background-color: #f5f5f0;
+    }
+
+    header, footer {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+/* UTILITIES */
+
+.text-primary {
+    color: #7d7973;
+}
+
+.text-secondary {
+    color: #6b8e7a;
+}
+
+.text-light {
+    color: #9a8f87;
+}
+
+.border-primary {
+    border-color: #7d7973;
+}
+
+.border-secondary {
+    border-color: #6b8e7a;
+}
+
+/* SECTION BACKGROUNDS */
+section {
+    background-color: rgba(255, 255, 255, 0.5);  /* Transparencia sutil */
+}
+
+.bg-light {
+    background-color: rgba(245, 245, 240, 0.8);
+}
+
+/* LINE DECORATIONS */
+.line-decoration {
+    background: linear-gradient(to right, #7d7973, transparent);
+    height: 2px;
+    width: 60px;
+}
+
+/* TYPOGRAPHY ENHANCEMENTS */
+
+article p {
+    line-height: 1.8;
+    color: #7d7973;
+}
+
+h1, h2, h3 {
+    letter-spacing: -0.01em;
+}
+
+ul, ol {
+    line-height: 1.8;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    color: #7d7973;
+}
+
+/* TAGS & LABELS */
+.tag {
+    background-color: rgba(107, 142, 122, 0.1);  /* Verde-gris muy claro */
+    color: #6b8e7a;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.85rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-top-color: #7d7973;
+}
+
+footer a {
+    color: #6b8e7a;
+}
+
+footer a:hover {
+    color: #7d7973;
+}

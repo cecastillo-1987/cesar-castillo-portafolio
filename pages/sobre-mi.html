@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí | César Castillo, PhD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    borderWidth: {
+                        '6': '6px',
+                    },
+                    colors: {
+                        black: '#0a0a0a',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body class="antialiased selection:bg-black selection:text-white">
+
+    <header class="w-full px-6 md:px-12 pt-10 pb-6 border-b-6 border-black sticky top-0 bg-white z-50">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
+            <div>
+                <a href="../index.html" class="text-xl md:text-2xl font-serif tracking-wide font-semibold text-center md:text-left hover:opacity-70 transition-opacity">
+                    César Castillo, PhD
+                </a>
+            </div>
+            <nav>
+                <ul class="flex flex-wrap justify-center items-center gap-4 md:gap-6 text-sm md:text-base font-sans tracking-widest uppercase">
+                    <li><a href="sobre-mi.html" class="nav-link font-semibold text-black border-b-2 border-black">Sobre mí</a></li>
+                    <li class="select-none text-gray-300">|</li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li class="select-none text-gray-300">|</li>
+                    <li><a href="experiencia.html" class="nav-link">Experiencia</a></li>
+                    <li class="select-none text-gray-300">|</li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow w-full max-w-4xl mx-auto px-6 md:px-12 py-16 md:py-24">
+        
+        <article class="space-y-12">
+            
+            <!-- Page Title -->
+            <section id="titulo">
+                <h1 class="font-serif text-4xl md:text-5xl font-medium mb-4 leading-tight">
+                    Sobre mí
+                </h1>
+                <div class="h-1 w-16 bg-black"></div>
+            </section>
+
+            <!-- Bio Section -->
+            <section id="bio" class="space-y-6">
+                <h2 class="font-sans text-lg tracking-[0.2em] uppercase font-semibold text-black border-b border-black/10 pb-2">
+                    Quién Soy
+                </h2>
+                <div class="font-sans font-light text-gray-700 leading-relaxed space-y-4 text-justify md:text-left">
+                    <p>
+                        Soy <strong>Psicólogo</strong> de la Universidad de Chile, con Magíster en Psicología Clínica de Adultos y <strong>Doctor en Filosofía</strong> con mención en Teoría del Arte y Estética por la misma institución.
+                    </p>
+                    <p>
+                        Mi trayectoria profesional transita por múltiples ámbitos: gestión de investigación científica, edición de libros académicos, investigación psicosocial cualitativa, práctica clínica psicoanalítica y crítica cinematográfica. Esta multiplicidad de campos me ha permitido desarrollar una perspectiva integradora que cruza la clínica, la teoría y la cultura.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Formation Section -->
+            <section id="formacion" class="space-y-6">
+                <h2 class="font-sans text-lg tracking-[0.2em] uppercase font-semibold text-black border-b border-black/10 pb-2">
+                    Formación
+                </h2>
+                <div class="space-y-6">
+                    <div class="border-l-4 border-black pl-6">
+                        <h3 class="font-serif text-xl font-semibold mb-1">Doctor en Filosofía</h3>
+                        <p class="font-sans text-sm text-gray-600 mb-2">Mención en Teoría del Arte y Estética</p>
+                        <p class="font-sans font-light text-gray-700">Universidad de Chile, 2018</p>
+                    </div>
+                    <div class="border-l-4 border-black pl-6">
+                        <h3 class="font-serif text-xl font-semibold mb-1">Magíster en Psicología Clínica</h3>
+                        <p class="font-sans text-sm text-gray-600 mb-2">Especialización en Adultos</p>
+                        <p class="font-sans font-light text-gray-700">Universidad de Chile, 2015</p>
+                    </div>
+                    <div class="border-l-4 border-black pl-6">
+                        <h3 class="font-serif text-xl font-semibold mb-1">Licenciado en Psicología</h3>
+                        <p class="font-sans font-light text-gray-700">Universidad de Chile, 2010</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Clinical Approach -->
+            <section id="enfoque" class="space-y-6">
+                <h2 class="font-sans text-lg tracking-[0.2em] uppercase font-semibold text-black border-b border-black/10 pb-2">
+                    Mi Enfoque
+                </h2>
+                <div class="font-sans font-light text-gray-700 leading-relaxed space-y-4">
+                    <p>
+                        Mi trabajo clínico se fundamenta en la tradición psicoanalítica, enriquecida por reflexiones filosóficas sobre la subjetividad, el deseo y la transformación. Creo que el cambio terapéutico emerge del encuentro genuino, en un espacio donde se pueden explorar las capas más profundas de la experiencia vivida.
+                    </p>
+                    <p>
+                        Trabajo con adultos que enfrentan depresión, ansiedad, traumas, crisis identitarias y procesos de duelo. Mi objetivo es acompañar procesos de transformación profunda, no solo la remisión de síntomas.
+                    </p>
+                    <p>
+                        Paralelamente, mi interés académico en estética y cine me permite ofrecer perspectivas alternativas sobre cómo la cultura configura nuestra subjetividad, y cómo el análisis de las representaciones puede enriquecer la comprensión clínica.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Interests & Pursuits -->
+            <section id="intereses" class="space-y-6">
+                <h2 class="font-sans text-lg tracking-[0.2em] uppercase font-semibold text-black border-b border-black/10 pb-2">
+                    Intereses Principales
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-serif font-semibold text-lg mb-3">Clínica</h3>
+                        <ul class="font-sans font-light text-gray-700 space-y-2 text-sm">
+                            <li>• Psicoterapia psicoanalítica</li>
+                            <li>• Procesos de transformación</li>
+                            <li>• Trauma y disociación</li>
+                            <li>• Identidad y sexualidad</li>
+                            <li>• Relaciones tempranas</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-serif font-semibold text-lg mb-3">Teoría & Cultura</h3>
+                        <ul class="font-sans font-light text-gray-700 space-y-2 text-sm">
+                            <li>• Teoría psicoanalítica contemporánea</li>
+                            <li>• Filosofía de la estética</li>
+                            <li>• Crítica cinematográfica</li>
+                            <li>• Psicoanalisis y arte</li>
+                            <li>• Representación y subjetividad</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section id="contacto-cta" class="pt-8 border-t border-gray-200">
+                <p class="font-sans font-light text-gray-700 mb-6">
+                    ¿Interesado en comenzar un proceso terapéutico o colaborar en proyectos académicos?
+                </p>
+                <a href="contacto.html" class="inline-block border-2 border-black text-black px-8 py-3 font-sans text-sm tracking-[0.2em] uppercase hover:bg-black hover:text-white transition-all duration-300">
+                    Contactactame
+                </a>
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer class="w-full px-6 md:px-12 py-8 mt-auto border-t-6 border-black bg-white">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-0">
+            <div class="flex flex-col">
+                <span class="font-serif text-lg md:text-xl font-semibold">César Castillo Vega</span>
+                <span class="font-sans text-sm text-gray-500 tracking-wider">Psicólogo, Mg, PhD.</span>
+            </div>
+            <div class="flex flex-col items-start md:items-end gap-1 font-sans font-light text-sm md:text-base">
+                <a href="mailto:cecastillo@uchile.cl" class="hover:text-gray-500 transition-colors">
+                    cecastillo@uchile.cl
+                </a>
+                <a href="mailto:hxcmsk@gmail.com" class="hover:text-gray-500 transition-colors text-gray-500">
+                    hxcmsk@gmail.com
+                </a>
+                <a href="tel:+56965157548" class="hover:text-gray-500 transition-colors mt-1">
+                    +56 9 6515 7548
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
